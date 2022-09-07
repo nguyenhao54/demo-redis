@@ -1,0 +1,51 @@
+<Configuration status="warn" >
+
+    <Properties>
+        <Property name="filename">logs/test.log</Property>
+        <Property name="LOG_DIR">logs/rotation</Property>
+    </Properties>
+
+    <Appenders >
+        <!-- Console appender configuration -->
+        <Console name="STDOUT">
+            <PatternLayout
+                    disableAnsi="false"
+                    pattern="%highlight{%d{yyyy-MM-dd HH:mm:ss} %-5p %c{3}: %L - %m%n}{FATAL=red blink, ERROR=red, WARN=yellow bold}" />
+        </Console>
+        <File name="File" fileName="${filename}">
+            <PatternLayout>
+                <Pattern>%highlight{%d{yyyy-MM-dd HH:mm:ss} %-5p %c{3}: %L - %m%n}</Pattern>
+            </PatternLayout>
+        </File>
+
+        <!--        Rolling-->
+        <RollingFile
+                name="rollingFile"
+                fileName="${LOG_DIR}/application.log"
+                filePattern="${LOG_DIR}/application.%d{yyyy-MM-dd-HH-mm}.log"
+                ignoreExceptions="false">
+            <PatternLayout>
+                <Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %m%n</Pattern>
+            </PatternLayout>
+            <Policies>
+                <OnStartupTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="10 MB" />
+                <TimeBasedTriggeringPolicy filePattern="${LOG_DIR}/application.%d{yyyy-MM-dd-HH-mm}.log" />
+            </Policies>
+            <DefaultRolloverStrategy max="5" />
+        </RollingFile>
+    </Appenders>
+
+    <!--RollingFile Appender -->
+
+    <Loggers>
+        <Logger name="MyLogger" level="ALL" additivity="false" >
+            <AppenderRef ref="STDOUT" />
+        </Logger>
+        <!-- Root logger referring to console appender -->
+        <Root level="all">
+            <AppenderRef ref="STDOUT" />
+            <AppenderRef ref="File" />
+        </Root>
+    </Loggers>
+</Configuration>

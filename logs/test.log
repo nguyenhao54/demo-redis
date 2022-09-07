@@ -1,0 +1,56 @@
+2022-09-06 16:29:17 INFO  RedisJava: 14 - Connecting to server sucessfully!
+2022-09-06 16:31:14 INFO  RedisJava: 14 - Connecting to server sucessfully!
+2022-09-06 16:31:14 INFO  RedisJava: 15 - The server is running PONG 
+2022-09-06 16:31:14 TRACE RedisJava: 18 - 
+***** STRING *******
+2022-09-06 16:31:14 INFO  RedisJava: 21 - Value of name: kyle 
+2022-09-06 16:31:14 INFO  RedisJava: 22 - Value of age: 23 
+2022-09-06 16:45:47 INFO  RedisJava: 14 - Connecting to server sucessfully!
+2022-09-06 16:45:47 INFO  RedisJava: 15 - The server is running PONG 
+2022-09-06 16:45:47 TRACE RedisJava: 18 - STRING
+2022-09-06 16:45:47 INFO  RedisJava: 21 - Value of name: kyle 
+2022-09-06 16:45:47 INFO  RedisJava: 22 - Value of age: 23 
+2022-09-06 16:45:47 INFO  RedisJava: 24 - Deleted name
+2022-09-06 16:45:47 INFO  RedisJava: 25 - All keys: [age]
+2022-09-06 16:45:47 INFO  RedisJava: 26 - Check if exits name: false
+2022-09-06 16:45:47 TRACE RedisJava: 29 - LIST
+2022-09-06 16:45:47 INFO  RedisJava: 34 - List friends: 
+2022-09-06 16:45:47 INFO  RedisJava: 36 - 1. Saly
+2022-09-06 16:45:47 INFO  RedisJava: 36 - 2. Kyle
+2022-09-06 16:45:47 INFO  RedisJava: 36 - 3. Mathew
+2022-09-06 16:45:47 INFO  RedisJava: 38 - Top element of list friends: Saly
+2022-09-06 16:45:47 TRACE RedisJava: 41 - SET
+2022-09-06 16:45:47 INFO  RedisJava: 46 - Members of set hobbies : [wave surfing, weight lifting]
+2022-09-06 16:45:47 INFO  RedisJava: 47 - Members of set drinks : [matcha latte, americano]
+2022-09-06 16:45:47 INFO  RedisJava: 50 - HASH
+2022-09-06 16:45:47 INFO  RedisJava: 54 - Info about person: {name=kyle, job=Developer, age=23}
+2022-09-06 16:45:47 TRACE RedisJava: 57 - SORTED SET
+2022-09-06 16:45:47 INFO  RedisJava: 61 - Height of student Kate: 167.2
+2022-09-06 16:45:47 INFO  RedisJava: 62 - Ascending sort: [Sophia, Kate, Kyle]
+2022-09-06 16:45:47 INFO  RedisJava: 63 - Remove Kate: successfully
+2022-09-06 16:45:47 INFO  RedisJava: 64 - Number of person taller than 170 cm: 1
+2022-09-06 16:45:47 TRACE RedisJava: 67 - STREAM
+2022-09-06 17:14:01 INFO  RedisJava: 14 - Connecting to server sucessfully!
+2022-09-06 17:14:01 INFO  RedisJava: 15 - The server is running PONG 
+2022-09-06 17:14:01 TRACE RedisJava: 18 - STRING
+2022-09-06 17:14:01 INFO  RedisJava: 21 - Value of name: kyle 
+2022-09-06 17:14:01 INFO  RedisJava: 22 - Value of age: 23 
+2022-09-06 17:14:01 INFO  RedisJava: 24 - Deleted name
+2022-09-06 17:14:01 INFO  RedisJava: 25 - All keys: [age]
+2022-09-06 17:14:01 INFO  RedisJava: 26 - Check if exits name: false
+2022-09-06 17:14:01 TRACE RedisJava: 29 - LIST
+2022-09-06 17:14:01 INFO  RedisJava: 34 - List friends: 
+2022-09-06 17:14:01 INFO  RedisJava: 36 - 1. Saly
+2022-09-06 17:14:01 INFO  RedisJava: 36 - 2. Kyle
+2022-09-06 17:14:01 INFO  RedisJava: 36 - 3. Mathew
+2022-09-06 17:14:01 INFO  RedisJava: 38 - Top element of list friends: Saly
+2022-09-06 17:14:01 TRACE RedisJava: 41 - SET
+2022-09-06 17:14:01 INFO  RedisJava: 46 - Members of set hobbies : [wave surfing, weight lifting]
+2022-09-06 17:14:01 INFO  RedisJava: 47 - Members of set drinks : [matcha latte, americano]
+2022-09-06 17:14:01 INFO  RedisJava: 50 - HASH
+2022-09-06 17:14:01 INFO  RedisJava: 54 - Info about person: {name=kyle, job=Developer, age=23}
+2022-09-06 17:14:01 TRACE RedisJava: 57 - SORTED SET
+2022-09-06 17:14:01 INFO  RedisJava: 61 - Height of student Kate: 167.2
+2022-09-06 17:14:01 INFO  RedisJava: 62 - Ascending sort: [Sophia, Kate, Kyle]
+2022-09-06 17:14:01 INFO  RedisJava: 63 - Remove Kate: successfully
+2022-09-06 17:14:01 INFO  RedisJava: 64 - Number of person taller than 170 cm: 1
